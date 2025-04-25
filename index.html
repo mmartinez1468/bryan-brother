@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <!-- Page Loader -->
+        <div class="loader"></div>
+        
+
+        <!------------------ NAVBAR ------------------>
+        <header class="header"> 
+            <nav class="nav header-container">
+            <div class="nav__data">
+                <a href="index.html" class="nav__logo" aria-label="Go back to landing page">
+                    <img src="images/logo.jpg" alt="">
+                </a>
+                
+                <div class="nav__toggle" id="nav-toggle">
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="nav__burger" fill="currentColor"><path d="M3 4H21V6H3V4ZM3 11H21V13H3V11ZM3 18H21V20H3V18Z"></path></svg>
+                    
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="nav__close" fill="currentColor"><path d="M10.5859 12L2.79297 4.20706L4.20718 2.79285L12.0001 10.5857L19.793 2.79285L21.2072 4.20706L13.4143 12L21.2072 19.7928L19.793 21.2071L12.0001 13.4142L4.20718 21.2071L2.79297 19.7928L10.5859 12Z"></path></svg>
+                
+                </div>
+            </div>
+            
+    
+            <!--=============== NAV MENU ===============-->
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li><a href="index.html" class="nav__link">Home</a></li>
+    
+                    <!--=============== DROPDOWN 1 ===============-->
+                    
+                    
+                    <li><a href="./About/about.html" class="nav__link">About</a></li>
+                    <li class="dropdown__item">
+                    <div class="nav__link">
+                        Services <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="dropdown__arrow" fill="currentColor"><path d="M12 15.0006L7.75732 10.758L9.17154 9.34375L12 12.1722L14.8284 9.34375L16.2426 10.758L12 15.0006Z"></path></svg>
+                    </div>
+    
+                    <ul class="dropdown__menu">
+                        <li>
+                        <a href="./webDev/webDev.html" class="dropdown__link">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="web-dev-icon" fill="currentColor"><path d="M13 18V20H17V22H7V20H11V18H2.9918C2.44405 18 2 17.5511 2 16.9925V4.00748C2 3.45107 2.45531 3 2.9918 3H21.0082C21.556 3 22 3.44892 22 4.00748V16.9925C22 17.5489 21.5447 18 21.0082 18H13Z"></path></svg> Web Development
+                        </a>                          
+                        </li> 
+                        <li>
+                            <a href="Hosting/hosting.html" class="dropdown__link">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="hosting-icon" fill="currentColor"><path d="M17 7C13.5705 7 10.6449 9.15804 9.50734 12.1903L11.3805 12.8927C12.2337 10.6185 14.4278 9 17 9C17.6983 9 18.3687 9.11928 18.992 9.33857C21.3265 10.16 23 12.3846 23 15C23 18.3137 20.3137 21 17 21H7C3.68629 21 1 18.3137 1 15C1 12.3846 2.67346 10.16 5.00804 9.33857C5.0027 9.22639 5 9.11351 5 9C5 5.13401 8.13401 2 12 2C15.242 2 17.9693 4.20399 18.7652 7.19539C18.1973 7.0675 17.6065 7 17 7Z"></path></svg> Hosting
+                            </a>                          
+                        </li>
+    
+                        <li>
+                            <a href="/Social Media/media.html" class="dropdown__link">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="social-media-icon" fill="currentColor"><path d="M6 2H18C18.5523 2 19 2.44772 19 3V21C19 21.5523 18.5523 22 18 22H6C5.44772 22 5 21.5523 5 21V3C5 2.44772 5.44772 2 6 2ZM12 17C11.4477 17 11 17.4477 11 18C11 18.5523 11.4477 19 12 19C12.5523 19 13 18.5523 13 18C13 17.4477 12.5523 17 12 17Z"></path></svg> Social Media
+                            </a>
+                        </li>
+    
+                        <li>
+                        <a href="/SEO/seo.html" class="dropdown__link">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="seo-icon" fill="currentColor"><path d="M11 2C15.968 2 20 6.032 20 11C20 15.968 15.968 20 11 20C6.032 20 2 15.968 2 11C2 6.032 6.032 2 11 2ZM19.4853 18.0711L22.3137 20.8995L20.8995 22.3137L18.0711 19.4853L19.4853 18.0711Z"></path></svg> SEO
+                        </a>
+                    </li>
+                    <!--=============== DROPDOWN SUBMENU ===============-->
+                    <li class="dropdown__subitem">
+                    <div class="dropdown__link">
+                        <a href="/ecommerce/ecommerce.html" style="color: black;" class="ecommerce-flex">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="ecom-icon" fill="currentColor"><path d="M4.00436 6.41686L0.761719 3.17422L2.17593 1.76001L5.41857 5.00265H20.6603C21.2126 5.00265 21.6603 5.45037 21.6603 6.00265C21.6603 6.09997 21.6461 6.19678 21.6182 6.29L19.2182 14.29C19.0913 14.713 18.7019 15.0027 18.2603 15.0027H6.00436V17.0027H17.0044V19.0027H5.00436C4.45207 19.0027 4.00436 18.5549 4.00436 18.0027V6.41686ZM5.50436 23.0027C4.67593 23.0027 4.00436 22.3311 4.00436 21.5027C4.00436 20.6742 4.67593 20.0027 5.50436 20.0027C6.33279 20.0027 7.00436 20.6742 7.00436 21.5027C7.00436 22.3311 6.33279 23.0027 5.50436 23.0027ZM17.5044 23.0027C16.6759 23.0027 16.0044 22.3311 16.0044 21.5027C16.0044 20.6742 16.6759 20.0027 17.5044 20.0027C18.3328 20.0027 19.0044 20.6742 19.0044 21.5027C19.0044 22.3311 18.3328 23.0027 17.5044 23.0027Z"></path></svg> E-commerce <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="ecom-drop-icon" fill="currentColor"><path d="M12 15.0006L7.75732 10.758L9.17154 9.34375L12 12.1722L14.8284 9.34375L16.2426 10.758L12 15.0006Z"></path></svg>
+                        </a>
+                    </div>
+    
+                    <ul class="dropdown__submenu">
+                        <li>
+                            <a href="/ecommerce/ecommerce.html" class="dropdown__sublink">
+                            <i class="ri-plug-2-fill"></i> Plug-ins
+                            </a>
+                        </li>
+    
+                        <li>
+                            <a href="/ecommerce/ecommerce.html" class="dropdown__sublink">
+                            <i class="ri-external-link-fill"></i> Extensions
+                            </a>
+                        </li>
+    
+                        <li>
+                            <a href="/ecommerce/ecommerce.html" class="dropdown__sublink">
+                            <i class="ri-home-gear-fill"></i> API
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                    </ul>
+                </li>
+                    <!--=============== DROPDOWN 2 ===============-->
+                    <li><a href="/Contact Us/contact.html" class="nav__link" aria-label="Get in touch with our team">Contact Us</a></li>
+                    
+                </ul>
+            </div>
+            </nav>
+        </header>
+
+        <section id="landing">
+            <div class="landing-intro">
+                <h1>
+                    Building Your Trust from the Ground Up.
+                </h1>
+                <button class="landing-button">Join Us</button>
+            </div>
+        </section>
+
+        <section id="landing-cta">
+            <div class="landing-cta-intro">
+                <h2>
+                    FULL SERVICE RESIDENTIAL CONTRACTOR
+                </h2>
+                <p>
+                    Transforming houses into homes is our specialty. 
+                    With a commitment to quality and customer satisfaction, 
+                    SK Contreras Construction provides a seamless construction 
+                    experience tailored to your vision.
+                </p>
+                <a href="/your-link-here" class="landing-cta-button">
+                    <span>Work With Us!</span>
+                </a>
+            </div>
+            <div class="landing-cta-image">
+                <img src="images/craftsman-treasure-fired-ceramic-tile-roof.jpg" alt="">
+            </div>
+        </section>
+
+        <section id="landingServices">
+            <div class="landing-services-intro">
+                <span>
+                    What We Offer
+                </span>
+                <h2>
+                    Our Services
+                </h2>
+                <p>
+                    At Premier Roofing Solutions, we deliver exceptional roofing services tailored to your specific needs. With decades of combined experience, our certified team provides everything from complete roof installations to emergency repairs and preventative maintenance.
+                </p>
+            </div>
+            <div class="landing-services-image">
+                <img src="images/Types_of_Roofs_feature-1340x800.webp" alt="">
+            </div>
+
+            <div class="landing-services-explained">
+                <div class="landing-services-card">
+                    <div class="services-card-image">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="rgba(254,254,254,1)"><path d="M5.32943 3.27158C6.56252 2.8332 7.9923 3.10749 8.97927 4.09446C10.1002 5.21537 10.3019 6.90741 9.5843 8.23385L20.293 18.9437L18.8788 20.3579L8.16982 9.64875C6.84325 10.3669 5.15069 10.1654 4.02952 9.04421C3.04227 8.05696 2.7681 6.62665 3.20701 5.39332L5.44373 7.63C6.02952 8.21578 6.97927 8.21578 7.56505 7.63C8.15084 7.04421 8.15084 6.09446 7.56505 5.50868L5.32943 3.27158ZM15.6968 5.15512L18.8788 3.38736L20.293 4.80157L18.5252 7.98355L16.7574 8.3371L14.6361 10.4584L13.2219 9.04421L15.3432 6.92289L15.6968 5.15512ZM8.97927 13.2868L10.3935 14.7011L5.09018 20.0044C4.69966 20.3949 4.06649 20.3949 3.67597 20.0044C3.31334 19.6417 3.28744 19.0699 3.59826 18.6774L3.67597 18.5902L8.97927 13.2868Z"></path></svg>
+                    </div>
+                    <div class="services-card-info">
+                        <h4>
+                            Installation
+                        </h4>
+                        <p>
+                            Complete installation for new construction or full replacements. Professional installation ensures proper waterproofing, structural integrity, and manufacturer warranty compliance.
+                        </p>
+                        <a href="" class="services-card-button">
+                            <h4>More</h4>
+                        </a>
+                    </div>
+                </div>
+                <div class="landing-services-card">
+                    <div class="services-card-image">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="rgba(255,255,255,1)"><path d="M17 8V2H20C20.5523 2 21 2.44772 21 3V7C21 7.55228 20.5523 8 20 8H17ZM15 22C15 22.5523 14.5523 23 14 23H10C9.44772 23 9 22.5523 9 22V8H2.5V6.07437C2.5 5.7187 2.68891 5.3898 2.99613 5.21059L8.5 2H15V22Z"></path></svg>
+                    </div>
+                    <div class="services-card-info">
+                        <h4>
+                            Repairs
+                        </h4>
+                        <p>
+                            Fixing leaks, damaged shingles, flashing issues, and other problems. Timely repairs prevent small issues from developing into costly structural damage or interior water damage.
+                        </p>
+                        <a href="" class="services-card-button">
+                            <h4>More</h4>
+                        </a>
+                    </div>
+                </div>
+                <div class="landing-services-card">
+                    <div class="services-card-image">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="rgba(255,255,255,1)"><path d="M18.031 16.6168L22.3137 20.8995L20.8995 22.3137L16.6168 18.031C15.0769 19.263 13.124 20 11 20C6.032 20 2 15.968 2 11C2 6.032 6.032 2 11 2C15.968 2 20 6.032 20 11C20 13.124 19.263 15.0769 18.031 16.6168ZM16.0247 15.8748C17.2475 14.6146 18 12.8956 18 11C18 7.1325 14.8675 4 11 4C7.1325 4 4 7.1325 4 11C4 14.8675 7.1325 18 11 18C12.8956 18 14.6146 17.2475 15.8748 16.0247L16.0247 15.8748ZM12.1779 7.17624C11.4834 7.48982 11 8.18846 11 9C11 10.1046 11.8954 11 13 11C13.8115 11 14.5102 10.5166 14.8238 9.82212C14.9383 10.1945 15 10.59 15 11C15 13.2091 13.2091 15 11 15C8.79086 15 7 13.2091 7 11C7 8.79086 8.79086 7 11 7C11.41 7 11.8055 7.06167 12.1779 7.17624Z"></path></svg>
+                    </div>
+                    <div class="services-card-info">
+                        <h4>
+                            Inspections
+                        </h4>
+                        <p>
+                            Thorough assessments of roof condition and identifying potential issues. Regular inspections help catch problems early and can significantly extend the life of any roofing system.
+                        </p>
+                        <a href="" class="services-card-button">
+                            <h4>More</h4>
+                        </a>
+                    </div>
+                </div>
+                <div class="landing-services-card">
+                    <div class="services-card-image">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="rgba(255,255,255,1)"><path d="M20 20C20 20.5523 19.5523 21 19 21H5C4.44772 21 4 20.5523 4 20V11L1 11L11.3273 1.6115C11.7087 1.26475 12.2913 1.26475 12.6727 1.6115L23 11L20 11V20ZM8.59208 13.808L7.60099 14.3802L8.6017 16.1133L9.5943 15.5402C9.98756 15.9116 10.467 16.193 10.9994 16.3512V17.4956H13.0007V16.3512C13.5331 16.1929 14.0125 15.9115 14.4057 15.5401L15.3984 16.1132L16.399 14.3801L15.4079 13.8078C15.4696 13.5478 15.5022 13.2766 15.5022 12.9978C15.5022 12.7189 15.4696 12.4477 15.4078 12.1877L16.399 11.6154L15.3983 9.88225L14.4056 10.4554C14.0124 10.084 13.533 9.80264 13.0006 9.64436V8.49998H10.9993V9.64436C10.4669 9.80265 9.98747 10.084 9.59421 10.4554L8.60164 9.88234L7.60099 11.6155L8.59205 12.1877C8.53034 12.4477 8.49768 12.7189 8.49768 12.9978C8.49768 13.2767 8.53035 13.5479 8.59208 13.808ZM12 14.4971C11.171 14.4971 10.499 13.8258 10.499 12.9978C10.499 12.1698 11.171 11.4985 12 11.4985C12.8289 11.4985 13.5009 12.1698 13.5009 12.9978C13.5009 13.8258 12.8289 14.4971 12 14.4971Z"></path></svg>
+                    </div>
+                    <div class="services-card-info">
+                        <h4>
+                            Maintenance
+                        </h4>
+                        <p>
+                            Regular service plans to extend roof life and prevent problems. Preventative maintenance typically includes clearing debris, checking for loose materials, and ensuring proper drainage.
+                        </p>
+                        <a href="" class="services-card-button">
+                            <h4>More</h4>
+                        </a>
+                    </div>
+                </div>
+                <div class="landing-services-card">
+                    <div class="services-card-image">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="rgba(255,255,255,1)"><path d="M16.9885 18L18.2044 16.4194C18.4061 16.1572 18.5154 15.8356 18.5154 15.5048C18.5154 14.6764 17.8439 14.0048 17.0154 14.0048H15V10.0291C15 9.56319 14.7835 9.12374 14.4141 8.83982C13.7573 8.33495 12.8156 8.45813 12.3107 9.11494L5.9453 17.3961C3.04248 16.1959 1 13.3365 1 10C1 5.58172 4.58172 2 9 2C12.3949 2 15.2959 4.11466 16.4576 7.09864C16.7951 7.0339 17.1436 7 17.5 7C20.5376 7 23 9.46243 23 12.5C23 15.5376 20.5376 18 17.5 18H16.9885ZM13 16.0048H16L11 22.5048V18.0048H8L13 11.5V16.0048Z"></path></svg>
+                    </div>
+                    <div class="services-card-info">
+                        <h4>
+                            Emergency
+                        </h4>
+                        <p>
+                            Quick response for storm damage or unexpected leaks. A reliable emergency response team can minimize water damage during sudden roof failures or severe weather events.
+                        </p>
+                        <a href="" class="services-card-button">
+                            <h4>More</h4>
+                        </a>
+                    </div>
+                </div>
+                <div class="landing-services-card">
+                    <div class="services-card-image">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="rgba(255,255,255,1)"><path d="M8 10.2547V5C8 2.79086 9.79086 1 12 1C14.2091 1 16 2.79086 16 5V10.2547C17.8135 11.5196 19 13.6213 19 16C19 19.866 15.866 23 12 23C8.13401 23 5 19.866 5 16C5 13.6213 6.18652 11.5196 8 10.2547ZM8 16C8 18.2091 9.79086 20 12 20C14.2091 20 16 18.2091 16 16H8Z"></path></svg>
+                    </div>
+                    <div class="services-card-info">
+                        <h4>
+                            Insulation
+                        </h4>
+                        <p>
+                            Proper attic insulation installation for energy efficiency. Strategic insulation not only reduces your heating and cooling costs year-round but also helps prevent ice dams in winter by maintaining a consistent roof temperature.
+                        </p>
+                        <a href="" class="services-card-button">
+                            <h4>More</h4>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="reviews">
+            <div class="review-intro">
+                <h2>Our Reviews</h2>
+                <p>
+                    We're proud to have served countless satisfied customers throughout 
+                    our years in business. Our commitment to quality workmanship, transparent 
+                    communication, and exceptional customer service has earned us a stellar 
+                    reputation in the community.
+                </p>
+            </div>
+            <div class="carousel-container">
+              <div class="carousel">
+                <div class="carousel-slide" data-index="0">
+                    <div class="reviewer-info">
+                        <div class="reviewer-icon">
+                            <img src="images/guy.jpg" alt="">
+                        </div>
+                        <div class="reviewer-name">
+                            <span>Kimberley T.</span>
+                            <p>From: Facebook</p>
+                        </div>
+                        <div class="reviewer-rating">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                        </div>
+                    </div>
+                    <div class="reviewer-review">
+                        <span>
+                            I couldn't be happier with Premier Roofing Solutions! After discovering 
+                            a leak during heavy rainfall, I called them in a panic. Their emergency 
+                            team arrived within hours and quickly identified the problem. 
+                        </span>
+                    </div>
+                </div>
+                <div class="carousel-slide" data-index="1">
+                    <div class="reviewer-info">
+                        <div class="reviewer-icon">
+                            <img src="images/default.webp" alt="">
+                        </div>
+                        <div class="reviewer-name">
+                            <span>Carol D.</span>
+                            <p>From: Yelp</p>
+                        </div>
+                        <div class="reviewer-rating">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                        </div>
+                    </div>
+                    <div class="reviewer-review">
+                        <span>
+                            I couldn't be happier with Premier Roofing Solutions! After discovering 
+                            a leak during heavy rainfall, I called them in a panic. Their emergency 
+                            team arrived within hours and quickly identified the problem.
+                        </span>
+                    </div>
+                </div>
+                <div class="carousel-slide" data-index="2">
+                    <div class="reviewer-info">
+                        <div class="reviewer-icon">
+                            <img src="images/guy.jpg" alt="">
+                        </div>
+                        <div class="reviewer-name">
+                            <span>Will V.</span>
+                            <p>From: Yelp</p>
+                        </div>
+                        <div class="reviewer-rating">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                    </div>
+                    <div class="reviewer-review">
+                        <span>
+                            I couldn't be happier with Premier Roofing Solutions! After discovering 
+                            a leak during heavy rainfall, I called them in a panic. Their emergency 
+                            team arrived within hours and quickly identified the problem.
+                        </span>
+                    </div>
+                </div>
+                <div class="carousel-slide" data-index="3">
+                    <div class="reviewer-info">
+                        <div class="reviewer-icon">
+                            <img src="images/default.webp" alt="">
+                        </div>
+                        <div class="reviewer-name">
+                            <span>Stephanie B.</span>
+                            <p>From: Yelp</p>
+                        </div>
+                        <div class="reviewer-rating">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                        </div>
+                    </div>
+                    <div class="reviewer-review">
+                        <span>
+                            I couldn't be happier with Premier Roofing Solutions! After discovering 
+                            a leak during heavy rainfall, I called them in a panic. Their emergency 
+                            team arrived within hours and quickly identified the problem.
+                        </span>
+                    </div>
+                </div>
+                <div class="carousel-slide" data-index="4">
+                    <div class="reviewer-info">
+                        <div class="reviewer-icon">
+                            <img src="images/guy.jpg" alt="">
+                        </div>
+                        <div class="reviewer-name">
+                            <span>Marisol O.</span>
+                            <p>From: Yelp</p>
+                        </div>
+                        <div class="reviewer-rating">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                        </div>
+                    </div>
+                    <div class="reviewer-review">
+                        <span>
+                            I couldn't be happier with Premier Roofing Solutions! After discovering 
+                            a leak during heavy rainfall, I called them in a panic. Their emergency 
+                            team arrived within hours and quickly identified the problem.
+                        </span>
+                    </div>
+                </div>
+                <div class="carousel-slide" data-index="5">
+                    <div class="reviewer-info">
+                        <div class="reviewer-icon">
+                            <img src="images/default.webp" alt="">
+                        </div>
+                        <div class="reviewer-name">
+                            <span>joanndx10</span>
+                            <p>From: Trip Advisor</p>
+                        </div>
+                        <div class="reviewer-rating">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                    </div>
+                    <div class="reviewer-review">
+                        <span>
+                            I couldn't be happier with Premier Roofing Solutions! After discovering 
+                            a leak during heavy rainfall, I called them in a panic. Their emergency 
+                            team arrived within hours and quickly identified the problem.
+                        </span>
+                    </div>
+                </div>
+              </div>
+              
+              <div class="carousel-controls">
+                <button id="prevBtn">←</button>
+                <button id="nextBtn">→</button>
+              </div>
+              
+              <div class="carousel-indicators" id="indicators"></div>
+            </div>
+        </section>
+
+        <section id="gallery">
+            <div class="gallery-intro">
+                <span>Portfolio</span>
+                <h2>Some Of Our Work</h2>
+                <p>Our Craftsmanship Speaks Volumes
+                    Take a visual journey through our portfolio of completed projects. Each image in our gallery represents not just a roof, but a family protected, a business secured, or a dream home completed. From historic restorations to modern new constructions, these photographs showcase our attention to detail, superior workmanship, and commitment to excellence. </p>
+            </div>
+            <div class="gallery">
+                <span style="--i:1">
+                  <img src="images/roofing-1.jpg" alt="" />
+                </span>
+                <span style="--i:2">
+                  <img src="images/roofing-2.jpg" alt="" />
+                </span>
+                <span style="--i:3">
+                  <img src="images/roofing-3.jpg" alt="" />
+                </span>
+                <span style="--i:4">
+                  <img src="images/roofing-4.jpg" alt="" />
+                </span>
+                <span style="--i:5">
+                  <img src="images/roofing-5.jpg" alt="" />
+                </span>
+                <span style="--i:6">
+                  <img src="images/roofing-6.jpg" alt="" />
+                </span>
+                <span style="--i:7">
+                  <img src="images/roofing-7.jpg" alt="" />
+                </span>
+                <span style="--i:8">
+                  <img src="images/roofing-8.jpg" alt="" />
+                </span>
+            </div>
+        </section>
+
+        <!------------------ CONTACT SECTION ------------------>              
+        <section id="contact">                    
+            <div class="contact-intro">                      
+            <span>Contact Us</span>                      
+            <h2>Get A Free Consultation</h2>                      
+            <p>Ready to transform your vision into reality? Our team of experienced construction professionals is here to help. Whether you're planning a new build, renovation, or expansion project, we offer personalized consultations to understand your needs and provide expert guidance. Fill out the form below, and one of our specialists will contact you within 24 hours to discuss your project and provide a detailed estimate—no obligation, completely free.</p>
+            
+            <!-- Added Contact Information -->
+            <div class="contact-info">
+                <p><i class="fas fa-phone"></i> Phone: (555) 123-4567</p>
+                <p><i class="fas fa-envelope"></i> Email: info@constructioncompany.com</p>
+                <p><i class="fas fa-map-marker-alt"></i> Location: 123 Building Ave, Construction City, ST 12345</p>
+            </div>
+            
+            <img src="images/concrete-contact.jpeg" alt="">                    
+            </div>                    
+            <div class="contact-us-wrapper">             
+            <form class="contact-form">                 
+                <div class="contact-form-intro">                 
+                <h3>Contact Us!</h3>                 
+                </div>                 
+                <div class="form-row">                 
+                <div class="form-group">                     
+                    <label for="firstName">First Name:</label>                     
+                    <input type="text" id="firstName" name="firstName" required>                 
+                </div>                 
+                <div class="form-group">                     
+                    <label for="lastName">Last Name:</label>                     
+                    <input type="text" id="lastName" name="lastName" required>                 
+                </div>                 
+                </div>                 
+                <div class="form-group">                 
+                <label for="phone">Phone Number:</label>                 
+                <input type="tel" id="phone" name="phone" required>                 
+                </div>                 
+                <div class="form-group">                 
+                <label for="email">Email:</label>                 
+                <input type="email" id="email" name="email" required>                 
+                </div>                 
+                <div class="form-group">                 
+                <label for="message">Message:</label>                 
+                <textarea id="message" name="message" rows="5" required></textarea>                 
+                </div>                 
+                <button type="submit" class="landing-button">Submit</button>             
+            </form>             
+            </div>              
+        </section>
+
+        <!------------------ FOOTER SECTION ------------------>
+        <footer>
+            <div class="footerLinks">
+                <h4>Services</h4>
+                <hr class="solid">
+                <a href="/about.html">
+                    <p>Installation</p>
+                </a>
+                <a href="/index.html">
+                    <p>Repairs</p>
+                </a>
+                <a href="/webDev/webDev.html">
+                    <p>Inspections</p>
+                </a>
+                <a href="/index.html">
+                    <p>Maintenance</p>
+                </a>
+                <a href="/index.html">
+                  <p>Emergency</p>
+                </a>
+                <a href="/index.html">
+                  <p>Insulation</p>
+                </a>
+            </div>
+            <div class="footerLinks">
+                <h4>Resources</h4>
+                <hr class="solid">
+                <a href="mailto:marcosmartinez16@hickoryhillswebdevelopment.com">
+                    <p>Support</p>
+                </a>
+                <a href="mailto:marcosmartinez16@hickoryhillswebdevelopment.com">
+                    <p>Free Consultation</p>
+                </a>
+                <a href="/index.html">
+                    <p>FAQ</p>
+                </a>
+                <a href="">
+                    <p>Call Us</p>
+                </a>
+            </div>
+            <div class="footerLinks">
+                <h4>About</h4>
+                <hr class="solid">
+                <a href="">
+                    <p>Portfolio</p>
+                </a>
+                <a href="">
+                    <p>Terms Of Service</p>
+                </a>
+                <a href="/index.html">
+                    <p>Services</p>
+                </a>
+                <a href="">
+                    <p>Refund Policy</p>
+                </a>
+            </div>
+            <div class="footerLinks footerPrivacy">
+                <h4>Privacy</h4>
+                <hr class="solid">
+                <p>
+                  Questions or concerns? Reading this Privacy 
+                  Notice will help you understand your privacy 
+                  rights and choices. We are responsible for 
+                  making decisions about how your personal 
+                  information is processed. If you do not 
+                  agree with our policies and practices, 
+                  please do not use our Services. 
+                  If you still have any questions or 
+                  concerns, please contact us at 
+                  marcosmartinez16@icloud.com.
+                </p>
+            </div>
+        </footer>
+        
+    </main>
+
+
+
+        
+
+    <script src="script.js"></script>
+</body>
+</html>
