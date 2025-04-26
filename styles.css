@@ -1376,7 +1376,7 @@ input:checked+.gdpr-toggle-slider:before {
 
 
 /********************** CONTACT US SECTION **********************/
-#contact {
+  #contact {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1389,7 +1389,6 @@ input:checked+.gdpr-toggle-slider:before {
   .contact-intro {
     text-align: center;
     max-width: 800px;
-    margin: 0 auto 3rem;
     padding: 2rem;
   }
   
@@ -1522,13 +1521,14 @@ input:checked+.gdpr-toggle-slider:before {
       flex-direction: row;
       justify-content: start;
       align-items: start;
+      gap: 5rem;
     }
     .contact-intro {
       display: flex;
       flex-direction: column;
       justify-content: start;
       text-align: start;
-      width: 40%;
+      width: 50%;
       margin-left: 2rem;
     }
     .contact-intro {
@@ -1545,6 +1545,7 @@ input:checked+.gdpr-toggle-slider:before {
       justify-content: end;
       margin-left: auto;
       margin-right: 2rem;
+      width: 50%;
     }
     .contact-intro > img {
       display: block;
