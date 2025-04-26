@@ -801,7 +801,6 @@ input:checked+.gdpr-toggle-slider:before {
     align-items: center;
     z-index: 1;
     color: white;
-    padding-left: 1rem;
 }
 .landing-intro > h1 {
     font-size: 2rem;
